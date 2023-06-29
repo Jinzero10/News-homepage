@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.svg" alt="" class="logo">
+            </div>
+            <ul class="navbar-link">
+                <li>
+                    <a href="" aria-label="homepage" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="" aria-label="Newspage" class="nav-link">
+                        New
+                    </a>
+                </li>
+                <li>
+                    <a href="" aria-label="popular page" class="nav-link">
+                        Popular
+                    </a>
+                </li>
+                <li>
+                    <a href="" aria-label=" trending page" class="nav-link">
+                        Trending
+                    </a>
+                </li>
+                <li>
+                    <a href="" aria-label="Categories" class="nav-link">
+                        Categories
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="dimScreen"></div>
+        <section class="title_container">
+            <div class="title-image">
+                <img src="assets/images/image-web-3-mobile.jpg" alt="" class="web-image">
+            </div>
+            <div class="title">
+                <h1>
+                    The Bright Future of Web 3.0?
+                </h1>
+            </div>
+            <div class="title_parag">
+                <p>
+                    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                    But is it really fulfilling its promise?
+                </p>
+                <button type="submit" aria-label="read more button">
+                    Read more
+                </button>
+            </div>
+            <div class="new_container">
+                <h2 class="news_title">
+                    New 
+                </h2>
+                <div>
+                    <h3>
+                        Hydrogen VS Electric Cars
+                    </h3>
+                    <p>
+                        Will hydrogen-fueled cars ever catch up to EVs?
+                    </p>
+                </div>
+                <hr/>
+                <div>
+                    <h3>
+                        The Downsides of AI Artistry
+                    </h3>
+                    <p>
+                        What are the possible adverse effects of on-demand AI image generation?
+                    </p>
+                </div>
+                <hr/>
+                <div>
+                    <h3>   
+                        Is VC Funding Drying Up?
+                    </h3>
+                    <p>
+                        Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                    </p>
+                </div>
+            </div>
+            <div class="gadget-container">
+                <div>
+                    <div>
+                        <img src="assets/images/image-retro-pcs.jpg" alt="" class="retro-pic">
+                    </div>
+                    <div class="text_wrapper">
+                        <h2>
+                            01
+                        </h2>
+                        <h3>
+                            Reviving Retro PCs
+                        </h3>
+                        <p>
+                            What happens when old PCs are given modern upgrades?
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/images/image-top-laptops.jpg" alt="">
+                    </div>
+                    <div class="text_wrapper">
+                        <h2>
+                            02 
+                        </h2>
+                        <h3>
+                            Top 10 Laptops of 2022
+                        </h3>
+                        <p>
+                            Our best picks for various needs and budgets. 
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/images/image-gaming-growth.jpg" alt="">
+                    </div>
+                    <div class="text_wrapper">
+                        <h2>
+                            03
+                        </h2>
+                        <h3>
+                            The Growth of Gaming
+                        </h3>
+                        <p>
+                            How the pandemic has sparked fresh opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.navbar-link');
+        const overlay = document.getElementById('dimScreen');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        })
+        document.querySelectorAll('nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+        } ))
+    </script>
+</body>
+</html>
