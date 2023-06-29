@@ -22,4 +22,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click Here!](https://github.com/Jinzero10/News-homepage.git)
-- Live Site URL: [Click Here!](https://your-live-site-url.com)
+- Live Site URL: [Click Here!](https://deft-daifuku-1d68dd.netlify.app/)
